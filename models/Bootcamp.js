@@ -1,8 +1,8 @@
 const mongoose = require("mongoose")
 const slugify = require("slugify")
-const geocoder = require('../utils/geocoder');
+const geocoder = require('../utils/geocoder.js');
 
-const BootcampString = mongoose.Schema({
+const BootcampSchema = mongoose.Schema({
     name: {
         type: String,
         require: [true, "Please add name"],
